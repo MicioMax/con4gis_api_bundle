@@ -1,0 +1,7 @@
+Con4gisApiBundle:
+    path: /con4gis/api/{_url_fragment}
+    defaults:
+        _scope: frontend
+        _controller: "Con4gisApiBundle:Api:run"
+    requirements:
+        _url_fragment: .*

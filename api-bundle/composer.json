@@ -1,0 +1,10 @@
+{
+    "name": "con4gis/api-bundle",
+    "type": "contao-bundle",
+    "description": "Contao 4 con4gis api bundle",
+    "autoload": {
+        "psr-4": {
+            "Con4gis\\ApiBundle\\": "src/"
+        }
+    }
+}
