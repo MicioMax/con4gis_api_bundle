@@ -5,6 +5,7 @@ namespace Con4gis\ApiBundle\Controller;
 use Contao\CoreBundle\Controller\FrontendController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use c4g\Core\C4GApiCache;
+use Symfony\Component\HttpFoundation\Response;
 
 
 class ApiController extends FrontendController
@@ -69,10 +70,14 @@ class ApiController extends FrontendController
 
         }
 
+        // this is needed for the forum, because it must not send a json response
+        if (is_array($strResponse) && count($strResponse) > 1) {
+            $response = new Response($strResponse['data'], 200, array('Content-Type: Document'));
+        } else {
+            $response = new JsonResponse(json_decode($strResponse));
+        }
 
-        $response = new JsonResponse(json_decode($strResponse));
-
-        if (\Input::get('callback'))
+        if ($response instanceof JsonResponse && \Input::get('callback'))
         {
             $response->setCallback(\Input::get('callback'));
         }
