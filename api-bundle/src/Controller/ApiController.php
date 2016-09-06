@@ -25,7 +25,7 @@ class ApiController extends FrontendController
      * @var string
      */
     private $_sApiUrl = 'system/modules/con4gis_core/api/index.php';
-    private $_sApiBundleVersion = '1.0.0';
+    private static $_sApiBundleVersion = '1.0.0';
 
     public function runAction($_url_fragment)
     {
@@ -140,8 +140,8 @@ class ApiController extends FrontendController
     /**
      * @return string
      */
-    public function getSApiBundleVersion()
+    public static function getSApiBundleVersion()
     {
-        return $this->_sApiBundleVersion;
+        return self::$_sApiBundleVersion;
     }
 }
