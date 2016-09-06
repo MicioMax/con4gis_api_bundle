@@ -17,7 +17,7 @@ use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 /**
  * Class Con4gisApiBundle
- * @package Con4gis\ApiBundle
+ * @package con4gis\ApiBundle
  */
 class Con4gisApiBundle extends Bundle
 {
