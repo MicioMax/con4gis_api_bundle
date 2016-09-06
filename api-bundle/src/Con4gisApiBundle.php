@@ -1,11 +1,14 @@
 <?php
 
-/*
- * This file is part of Contao.
+/**
+ * con4gis - the gis-kit
  *
- * Copyright (c) 2005-2016 Leo Feyer
- *
- * @license LGPL-3.0+
+ * @version   php 5
+ * @package   con4gis
+ * @author    con4gis contributors (see "authors.txt")
+ * @license   GNU/LGPL http://opensource.org/licenses/lgpl-3.0.html
+ * @copyright Küstenschmiede GmbH Software & Design 2011 - 2016.
+ * @link      https://www.kuestenschmiede.de
  */
 
 namespace con4gis\ApiBundle;
@@ -13,9 +16,8 @@ namespace con4gis\ApiBundle;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 /**
- * Configures the Contao calendar bundle.
- *
- * @author Leo Feyer <https://github.com/leofeyer>
+ * Class Con4gisApiBundle
+ * @package Con4gis\ApiBundle
  */
 class Con4gisApiBundle extends Bundle
 {
