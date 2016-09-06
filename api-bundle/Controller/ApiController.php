@@ -1,4 +1,14 @@
 <?php
+/**
+ * con4gis - the gis-kit
+ *
+ * @version   php 5
+ * @package   con4gis
+ * @author    con4gis contributors (see "authors.txt")
+ * @license   GNU/LGPL http://opensource.org/licenses/lgpl-3.0.html
+ * @copyright Küstenschmiede GmbH Software & Design 2011 - 2016.
+ * @link      https://www.kuestenschmiede.de
+ */
 
 namespace Con4gis\ApiBundle\Controller;
 
@@ -15,6 +25,7 @@ class ApiController extends FrontendController
      * @var string
      */
     private $_sApiUrl = 'system/modules/con4gis_core/api/index.php';
+    private $_sApiBundleVersion = '1.0.0';
 
     public function runAction($_url_fragment)
     {
@@ -126,4 +137,11 @@ class ApiController extends FrontendController
         return explode('/', $strRequest);
     }
 
+    /**
+     * @return string
+     */
+    public function getSApiBundleVersion()
+    {
+        return $this->_sApiBundleVersion;
+    }
 }
