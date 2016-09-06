@@ -1,6 +1,6 @@
 <?php
 
-namespace Con4gis\ApiBundle\Controller;
+namespace con4gis\ApiBundle\Controller;
 
 use Contao\CoreBundle\Controller\FrontendController;
 use Symfony\Component\HttpFoundation\JsonResponse;

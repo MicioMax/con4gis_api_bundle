@@ -8,7 +8,7 @@
  * @license LGPL-3.0+
  */
 
-namespace Con4gis\ApiBundle;
+namespace con4gis\ApiBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
