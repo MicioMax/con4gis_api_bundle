@@ -1,10 +1,23 @@
 {
   "name": "con4gis/con4gis_api_bundle",
-  "type": "contao-bundle",
   "description": "Contao 4 con4gis api bundle",
+  "keywords": ["con4gis", "core", "contao", "c4g"],
+  "type": "contao-bundle",
+  "homepage": "https://con4gis.org",
   "license": "LGPL-3.0+",
+  "authors":[
+    {
+      "name":"Küstenschmiede GmbH Software & Design",
+      "homepage":"https://kuestenschmiede.de"
+    }
+  ],
   "require": {
-    "php": ">=5.5.0"
+    "php":">=5.5.0",
+    "contao/core-bundle": "^3.5.2 || ~4.2",
+    "contao-community-alliance/composer-plugin": "~2.4 || ~3.0"
+  },
+  "support": {
+    "issues": "https://github.com/Kuestenschmiede/con4gis_api_bundle/issues"
   },
   "autoload": {
     "psr-4": {
